@@ -1,0 +1,77 @@
+:root {
+    --primary: #1a1a1a;
+    --accent: #d42121;
+    --bg: #fdfdfd;
+    --serif: 'Playfair Display', serif;
+    --sans: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--primary);
+    font-family: var(--sans);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container { width: 90%; max-width: 1200px; margin: auto; }
+
+/* Header & Nav */
+.mag-header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 3px double var(--primary);
+}
+
+.logo {
+    font-family: var(--serif);
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+.tagline { text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 20px; }
+
+.main-nav ul {
+    list-style: none; padding: 0;
+    display: flex; justify-content: center; gap: 20px;
+    border-top: 1px solid #ddd; padding-top: 15px;
+}
+
+.main-nav a {
+    text-decoration: none; color: var(--primary);
+    font-weight: 600; text-transform: uppercase; font-size: 0.85rem;
+}
+
+.main-nav a.active { color: var(--accent); }
+
+/* Magazine Grid Layout */
+.featured-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.hero-article {
+    background: #eee; padding: 40px;
+    border-right: 1px solid #ddd;
+}
+
+.hero-article h2 { font-family: var(--serif); font-size: 3rem; margin: 10px 0; }
+
+.category {
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.magazine-layout .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card { border-top: 4px solid var(--primary); padding-top: 15px; }
+.card h3 { font-family: var(--serif); font-size: 1.5rem; }
